@@ -8,7 +8,7 @@ Tutor offers plenty of possibilities for platform customisation out of the box. 
 a. Modifying the Tutor :ref:`configuration parameters <configuration>`.
 b. Modifying the :ref:`Open edX docker image <customise>` that runs the Open edX platform.
 
-This section does not cover :ref:`plugin development <plugins>`. For simple changes, such as modifying the ``*.env.json`` files or the edx-platform settings, *you should not fork edx-platform or tutor*! Instead, you should create a simple :ref:`plugin for Tutor <plugins_yaml>`.
+This section does not cover :ref:`plugin development <plugins>`. For simple changes, such as modifying the ``*.env.yml`` files or the edx-platform settings, *you should not fork edx-platform or tutor*! Instead, you should create a simple :ref:`plugin for Tutor <plugins_yaml>`.
 
 .. _configuration:
 
@@ -31,7 +31,7 @@ Or from the system environment::
 
     export TUTOR_PARAM1=VALUE1
 
-Once the base configuration is created or updated, the environment is automatically re-generated. The environment is the set of all files required to manage an Open edX platform: Dockerfile, ``lms.env.json``, settings files, etc. You can view the environment files in the ``env`` folder::
+Once the base configuration is created or updated, the environment is automatically re-generated. The environment is the set of all files required to manage an Open edX platform: Dockerfile, ``lms.env.yml``, settings files, etc. You can view the environment files in the ``env`` folder::
 
     ls "$(tutor config printroot)/env"
 
